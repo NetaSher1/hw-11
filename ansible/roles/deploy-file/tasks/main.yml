@@ -1,0 +1,5 @@
+---
+- name: Deploy test1.txt on hosts
+  copy:
+    src: test1.txt
+    dest: /tmp/test1.txt

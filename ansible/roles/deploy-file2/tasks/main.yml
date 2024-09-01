@@ -1,0 +1,5 @@
+---
+- name: Deploy a file with the server's hostname
+  template:
+    src: hostname.txt.j2
+    dest: /tmp/test2.txt

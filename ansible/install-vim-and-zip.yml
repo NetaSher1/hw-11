@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: install vim and zip
+      apt:
+        name={{item}}
+        state=present
+      with_items:
+        - vim
+        - zip
